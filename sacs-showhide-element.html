@@ -1,0 +1,22 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-radio-group/paper-radio-group.html">
+<link rel="import" href="../paper-radio-button/paper-radio-button.html">
+
+<link rel="import" href="./sacs-showhide-element-styles.html">
+
+<dom-module id="sacs-showhide-element">
+  <template>
+    <style include="sacs-showhide-element-styles"></style>
+    
+    <paper-radio-group selected="show">
+        <paper-radio-button name="show">[[labelShow]]</paper-radio-button>
+        <paper-radio-button name="hide">[[labelHide]]</paper-radio-button>
+      </paper-radio-group>
+
+      <article class="content" id="content">
+                 <slot></slot>
+      </article>
+  </template>
+
+  <script src="./sacs-showhide-element.js"></script>
+</dom-module>
