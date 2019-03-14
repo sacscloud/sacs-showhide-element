@@ -13,21 +13,21 @@
         is:'sacs-showhide-element',
 
         properties:{
-          labelShow:{
+          labelshow:{
               type:String,
               value:"show"
           },
-          labelHide:{
+          labelhide:{
               type:String,
               value:"hide"
           }
         },
 
         listeners:{
-            'change':'prueba'
+            'change':'_showHideElement'
         },
 
-        prueba:function (e) {
+        _showHideElement:function (e) {
 
             const option = e.target.getAttribute('name');
 
