@@ -1,6 +1,6 @@
 {
   "name": "sacs-showhide-element",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "show or hide an element",
   "main": "sacs-showhide-element.html",
   "authors": [

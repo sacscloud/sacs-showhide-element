@@ -8,13 +8,13 @@
   <template>
     <style include="sacs-showhide-element-styles"></style>
     
-    <paper-radio-group selected="show">
+    <paper-radio-group selected="{{show}}">
         <paper-radio-button name="show">[[labelshow]]</paper-radio-button>
         <paper-radio-button name="hide">[[labelhide]]</paper-radio-button>
       </paper-radio-group>
 
       <article class="content" id="content">
-                 <slot></slot>
+                 <content></content>
       </article>
   </template>
 

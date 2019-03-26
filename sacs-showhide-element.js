@@ -20,17 +20,13 @@
           labelhide:{
               type:String,
               value:"hide"
+          },
+          show:{
+              type: String,
+              observer: "_showHideElement"
           }
         },
-
-        listeners:{
-            'change':'_showHideElement'
-        },
-
-        _showHideElement:function (e) {
-
-            const option = e.target.getAttribute('name');
-
+        _showHideElement:function (option) {
             if( option === "hide") {
                 this.$.content.style.display = "none";
             }else if(option === "show") {
